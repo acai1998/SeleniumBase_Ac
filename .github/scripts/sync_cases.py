@@ -108,7 +108,7 @@ def sync_to_db(cases):
                 # 使用 script_path 作为唯一标识
                 # 存在则更新，不存在则插入
                 sql = """
-                    INSERT INTO test_cases
+                    INSERT INTO Auto_TestCase
                         (name, module, type, priority, script_path, tags, status)
                     VALUES
                         (%(name)s, %(module)s, %(type)s, %(priority)s, %(script_path)s, %(tags)s, 'active')
