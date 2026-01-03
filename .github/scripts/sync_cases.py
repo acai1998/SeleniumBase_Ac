@@ -20,7 +20,7 @@ def get_db_connection():
         cursorclass=pymysql.cursors.DictCursor
     )
 
-def parse_test_files(test_dir='test_case'):
+def parse_test_files(test_dir='examples'):
     """解析所有 Python 测试文件"""
     cases = []
     test_path = Path(test_dir)
